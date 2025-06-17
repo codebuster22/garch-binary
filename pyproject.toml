@@ -1,10 +1,33 @@
 [project]
 name = "garch-back-test"
 version = "0.1.0"
-description = "Add your description here"
+description = "GARCH(1,1) volatility model backtest harness for Bitcoin binary options pricing"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    # Core data science stack
+    "pandas>=2.0.0",
+    "numpy>=1.25.0",
+    "scipy>=1.11.0",
+    
+    # Database connectivity
+    "sqlalchemy>=2.0.0",
+    "psycopg2-binary>=2.9.0",  # PostgreSQL driver for SQLAlchemy
+    
+    # GARCH modeling
+    "arch>=6.0.0",
+    
+    # Configuration management
+    "python-dotenv>=1.0.0",
+    
+    # Timezone handling
+    "pytz>=2023.3",
+    
+    # Optional: Jupyter notebook support
     "ipywidgets>=8.1.7",
     "notebook>=7.4.3",
+    
+    # Optional: Visualization
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
 ]
